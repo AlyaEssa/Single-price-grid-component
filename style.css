@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Karla:wght@400;700&display=swap");
+
+:root {
+  /*  ### Primary */
+
+  --clr-cyan: #2ab2af;
+  --dark-Cyan: hsl(179, 76%, 31%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* ### Neutral */
+
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: min(40rem, 90%);
+}
+
+.top_section {
+  background-color: #fff;
+  padding: 5%;
+  border-radius: 7px 7px 0 0;
+}
+.top_section_title {
+  color: var(--clr-cyan);
+  margin-bottom: 16px;
+}
+.top_section_sub_title {
+  color: var(--bright-yellow);
+  margin-bottom: 6px;
+}
+.top_section_paragraph {
+  color: var(--grayish-blue);
+  line-height: 24px;
+}
+
+.second-container {
+  display: flex;
+  width: 100%;
+}
+.first_box {
+  width: 50%;
+  background-color: var(--clr-cyan);
+  color: #fff;
+  padding-left: 36px;
+  border-radius: 0 0 0 7px;
+}
+.second_box {
+  width: 50%;
+  background-color: #4abebd;
+  color: #fff;
+  padding-left: 36px;
+  border-radius: 0 0 7px 0;
+}
+.first_box_title {
+  font-size: 16px;
+  padding-top: 37px;
+}
+
+.price {
+  font-size: 16px;
+  padding-top: 11px;
+  color: var(--light-gray);
+}
+.price span {
+  font-size: 25px;
+  font-weight: bold;
+}
+.first_box_paragraph {
+  padding-top: 8px;
+}
+.btn {
+  background-color: var(--bright-yellow);
+  display: inline-block;
+  padding: 13px 92px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 21px 0;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+.second_box_title {
+  font-size: 16px;
+  padding-top: 37px;
+}
+.second_box_paragrapg {
+  margin-top: 12px;
+}
+.second_box_paragrapg li {
+  list-style-type: none;
+  padding-top: 5px;
+  font-size: 12px;
+  color: var(--light-gray);
+}
+.second_box_paragrapg li:last-child {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 493px) {
+  .second-container {
+    flex-direction: column;
+  }
+  .first_box,
+  .second_box {
+    width: 100%;
+    border-radius: 0;
+  }
+}
