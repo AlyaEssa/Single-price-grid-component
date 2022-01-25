@@ -25,6 +25,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #98a6bd;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65rem;
 }
 
 .main-container {
@@ -33,26 +37,44 @@ body {
   justify-content: center;
   align-items: center;
 }
-.wrapper {
+/* .wrapper {
   width: min(40rem, 90%);
+} */
+h1,
+h2,
+a {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.top_section,
+.first_box,
+.second_box {
+  padding: 2.5rem;
 }
 
 .top_section {
   background-color: #fff;
-  padding: 5%;
   border-radius: 7px 7px 0 0;
 }
 .top_section_title {
   color: var(--clr-cyan);
-  margin-bottom: 16px;
+  /*  margin-bottom: 1.5rem;
+  font-size: 1.7rem; */
 }
 .top_section_sub_title {
   color: var(--bright-yellow);
-  margin-bottom: 6px;
 }
 .top_section_paragraph {
   color: var(--grayish-blue);
-  line-height: 24px;
 }
 
 .second-container {
@@ -63,62 +85,56 @@ body {
   width: 50%;
   background-color: var(--clr-cyan);
   color: #fff;
-  padding-left: 36px;
   border-radius: 0 0 0 7px;
 }
 .second_box {
   width: 50%;
   background-color: #4abebd;
   color: #fff;
-  padding-left: 36px;
   border-radius: 0 0 7px 0;
-}
-.first_box_title {
-  font-size: 16px;
-  padding-top: 37px;
 }
 
 .price {
-  font-size: 16px;
-  padding-top: 11px;
   color: var(--light-gray);
+  padding: 0.4rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
 }
 .price span {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 1rem;
 }
-.first_box_paragraph {
-  padding-top: 8px;
-}
+
 .btn {
   background-color: var(--bright-yellow);
-  display: inline-block;
-  padding: 13px 92px;
+  display: block;
+  text-align: center;
+  padding: 0.7rem;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  margin: 21px 0;
+  margin-top: 2rem;
   border-radius: 3px;
   box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
-.second_box_title {
-  font-size: 16px;
-  padding-top: 37px;
-}
+
 .second_box_paragrapg {
-  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .second_box_paragrapg li {
   list-style-type: none;
-  padding-top: 5px;
-  font-size: 12px;
+  padding: 0;
+  line-height: 1.4rem;
   color: var(--light-gray);
-}
-.second_box_paragrapg li:last-child {
-  padding-bottom: 20px;
 }
 
 @media (max-width: 493px) {
+  .wrapper {
+    width: min(40rem, 90%);
+  }
   .second-container {
     flex-direction: column;
   }
